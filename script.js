@@ -14,11 +14,9 @@ calc.addEventListener("click", ev => {
     }
 });
 
-function onPlusMinusButtonClick(ev) {
-    display.innerText = eval(`(${display.innerText}) * -1`)
-}
-
-plusMinusButton.addEventListener("click", onPlusMinusButtonClick)
+plusMinusButton.addEventListener("click", ev => {
+    display.innerText = eval(`(${display.innerText}) * -1`);
+});
 
 function onRusultButtonClick(ev) {
     display.innerText = eval(display.innerText)
